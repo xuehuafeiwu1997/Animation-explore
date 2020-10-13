@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FirstViewController.h"
+#import "SecondViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
-    FirstViewController *vc = [[FirstViewController alloc] init];
+//    FirstViewController *vc = [[FirstViewController alloc] init];
+    SecondViewController *vc = [[SecondViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     return YES;

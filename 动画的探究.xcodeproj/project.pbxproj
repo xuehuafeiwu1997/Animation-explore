@@ -15,6 +15,7 @@
 		B69045232533F95C0056CA2A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045222533F95C0056CA2A /* FirstViewController.m */; };
 		B69045262533F9A70056CA2A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045252533F9A70056CA2A /* MainViewController.m */; };
 		B69045292533FD060056CA2A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045282533FD060056CA2A /* SecondViewController.m */; };
+		B6CC4D562535889700C28BB7 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D552535889700C28BB7 /* AlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		B69045252533F9A70056CA2A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B69045272533FD060056CA2A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B69045282533FD060056CA2A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B6CC4D542535889700C28BB7 /* AlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		B6CC4D552535889700C28BB7 /* AlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
 		EABD8FFE13828BD6B40155C4 /* Pods-动画的探究.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-动画的探究.release.xcconfig"; path = "Target Support Files/Pods-动画的探究/Pods-动画的探究.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +97,8 @@
 				B69045222533F95C0056CA2A /* FirstViewController.m */,
 				B69045272533FD060056CA2A /* SecondViewController.h */,
 				B69045282533FD060056CA2A /* SecondViewController.m */,
+				B6CC4D542535889700C28BB7 /* AlertView.h */,
+				B6CC4D552535889700C28BB7 /* AlertView.m */,
 				B69045142533F8FC0056CA2A /* Assets.xcassets */,
 				B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */,
 				B69045192533F8FC0056CA2A /* Info.plist */,
@@ -200,6 +205,7 @@
 				B69045292533FD060056CA2A /* SecondViewController.m in Sources */,
 				B690450A2533F8F40056CA2A /* AppDelegate.m in Sources */,
 				B690451B2533F8FC0056CA2A /* main.m in Sources */,
+				B6CC4D562535889700C28BB7 /* AlertView.m in Sources */,
 				B69045232533F95C0056CA2A /* FirstViewController.m in Sources */,
 				B69045262533F9A70056CA2A /* MainViewController.m in Sources */,
 			);
