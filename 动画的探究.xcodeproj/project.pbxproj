@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B4DA5029FEDD74DE61228C00 /* libPods-动画的探究.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E88106269F4C77582BF9F3 /* libPods-动画的探究.a */; };
+		B6873B9A2537EF480010D42B /* PresentingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873B992537EF480010D42B /* PresentingAnimationController.m */; };
+		B6873B9D2537F53F0010D42B /* DismissingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873B9C2537F53F0010D42B /* DismissingAnimationController.m */; };
 		B690450A2533F8F40056CA2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045092533F8F40056CA2A /* AppDelegate.m */; };
 		B69045152533F8FC0056CA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69045142533F8FC0056CA2A /* Assets.xcassets */; };
 		B69045182533F8FC0056CA2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */; };
@@ -16,11 +18,20 @@
 		B69045262533F9A70056CA2A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045252533F9A70056CA2A /* MainViewController.m */; };
 		B69045292533FD060056CA2A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045282533FD060056CA2A /* SecondViewController.m */; };
 		B6CC4D562535889700C28BB7 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D552535889700C28BB7 /* AlertView.m */; };
+		B6CC4D592535ADC900C28BB7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */; };
+		B6CC4D5C2535B26600C28BB7 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */; };
+		B6CC4D5F253699C900C28BB7 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5E253699C900C28BB7 /* FourthViewController.m */; };
+		B6CC4D6D2537E3D900C28BB7 /* CustomVCTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */; };
+		B6CC4D702537E3EE00C28BB7 /* CustomModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29E88106269F4C77582BF9F3 /* libPods-动画的探究.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-动画的探究.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F48B04B1E97E03BB1D30A2 /* Pods-动画的探究.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-动画的探究.debug.xcconfig"; path = "Target Support Files/Pods-动画的探究/Pods-动画的探究.debug.xcconfig"; sourceTree = "<group>"; };
+		B6873B982537EF480010D42B /* PresentingAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentingAnimationController.h; sourceTree = "<group>"; };
+		B6873B992537EF480010D42B /* PresentingAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentingAnimationController.m; sourceTree = "<group>"; };
+		B6873B9B2537F53F0010D42B /* DismissingAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissingAnimationController.h; sourceTree = "<group>"; };
+		B6873B9C2537F53F0010D42B /* DismissingAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DismissingAnimationController.m; sourceTree = "<group>"; };
 		B69045052533F8F40056CA2A /* 动画的探究.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "动画的探究.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69045082533F8F40056CA2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B69045092533F8F40056CA2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +47,16 @@
 		B69045282533FD060056CA2A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B6CC4D542535889700C28BB7 /* AlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		B6CC4D552535889700C28BB7 /* AlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		B6CC4D572535ADC900C28BB7 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B6CC4D5A2535B26600C28BB7 /* ExampleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
+		B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
+		B6CC4D5D253699C900C28BB7 /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		B6CC4D5E253699C900C28BB7 /* FourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		B6CC4D6B2537E3D800C28BB7 /* CustomVCTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomVCTransitionViewController.h; sourceTree = "<group>"; };
+		B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomVCTransitionViewController.m; sourceTree = "<group>"; };
+		B6CC4D6E2537E3EE00C28BB7 /* CustomModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomModalViewController.h; sourceTree = "<group>"; };
+		B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomModalViewController.m; sourceTree = "<group>"; };
 		EABD8FFE13828BD6B40155C4 /* Pods-动画的探究.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-动画的探究.release.xcconfig"; path = "Target Support Files/Pods-动画的探究/Pods-动画的探究.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +120,20 @@
 				B69045282533FD060056CA2A /* SecondViewController.m */,
 				B6CC4D542535889700C28BB7 /* AlertView.h */,
 				B6CC4D552535889700C28BB7 /* AlertView.m */,
+				B6CC4D572535ADC900C28BB7 /* ThirdViewController.h */,
+				B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */,
+				B6CC4D5D253699C900C28BB7 /* FourthViewController.h */,
+				B6CC4D5E253699C900C28BB7 /* FourthViewController.m */,
+				B6CC4D5A2535B26600C28BB7 /* ExampleCell.h */,
+				B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */,
+				B6CC4D6B2537E3D800C28BB7 /* CustomVCTransitionViewController.h */,
+				B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */,
+				B6CC4D6E2537E3EE00C28BB7 /* CustomModalViewController.h */,
+				B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */,
+				B6873B982537EF480010D42B /* PresentingAnimationController.h */,
+				B6873B992537EF480010D42B /* PresentingAnimationController.m */,
+				B6873B9B2537F53F0010D42B /* DismissingAnimationController.h */,
+				B6873B9C2537F53F0010D42B /* DismissingAnimationController.m */,
 				B69045142533F8FC0056CA2A /* Assets.xcassets */,
 				B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */,
 				B69045192533F8FC0056CA2A /* Info.plist */,
@@ -203,11 +238,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69045292533FD060056CA2A /* SecondViewController.m in Sources */,
+				B6CC4D6D2537E3D900C28BB7 /* CustomVCTransitionViewController.m in Sources */,
 				B690450A2533F8F40056CA2A /* AppDelegate.m in Sources */,
+				B6CC4D702537E3EE00C28BB7 /* CustomModalViewController.m in Sources */,
 				B690451B2533F8FC0056CA2A /* main.m in Sources */,
+				B6873B9A2537EF480010D42B /* PresentingAnimationController.m in Sources */,
 				B6CC4D562535889700C28BB7 /* AlertView.m in Sources */,
+				B6CC4D5C2535B26600C28BB7 /* ExampleCell.m in Sources */,
 				B69045232533F95C0056CA2A /* FirstViewController.m in Sources */,
+				B6CC4D5F253699C900C28BB7 /* FourthViewController.m in Sources */,
+				B6873B9D2537F53F0010D42B /* DismissingAnimationController.m in Sources */,
 				B69045262533F9A70056CA2A /* MainViewController.m in Sources */,
+				B6CC4D592535ADC900C28BB7 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

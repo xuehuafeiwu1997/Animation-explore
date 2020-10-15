@@ -6,5 +6,5 @@ target '动画的探究' do
 
   # Pods for 动画的探究
      pod 'Masonry', '~> 1.1.0'
-
+     pod 'pop'
 end
