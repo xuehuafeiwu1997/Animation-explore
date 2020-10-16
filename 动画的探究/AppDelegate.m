@@ -11,6 +11,8 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "CustomVCTransitionViewController.h"
+#import "FifthViewController.h"
+#import "SixthViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,7 +29,9 @@
 //    FirstViewController *vc = [[FirstViewController alloc] init];
 //    SecondViewController *vc = [[SecondViewController alloc] init];
 //    ThirdViewController *vc = [[ThirdViewController alloc] init];
-    CustomVCTransitionViewController *vc = [[CustomVCTransitionViewController alloc] init];
+//    CustomVCTransitionViewController *vc = [[CustomVCTransitionViewController alloc] init];
+//    FifthViewController *vc = [[FifthViewController alloc] init];
+    SixthViewController *vc = [[SixthViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     return YES;
