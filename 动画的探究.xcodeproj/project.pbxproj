@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4DA5029FEDD74DE61228C00 /* libPods-动画的探究.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E88106269F4C77582BF9F3 /* libPods-动画的探究.a */; };
+		B622003B2539B57800571E08 /* SeventhViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B622003A2539B57800571E08 /* SeventhViewController.m */; };
 		B6873B9A2537EF480010D42B /* PresentingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873B992537EF480010D42B /* PresentingAnimationController.m */; };
 		B6873B9D2537F53F0010D42B /* DismissingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873B9C2537F53F0010D42B /* DismissingAnimationController.m */; };
 		B6873BA0253864C10010D42B /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873B9F253864C10010D42B /* FifthViewController.m */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		29E88106269F4C77582BF9F3 /* libPods-动画的探究.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-动画的探究.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F48B04B1E97E03BB1D30A2 /* Pods-动画的探究.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-动画的探究.debug.xcconfig"; path = "Target Support Files/Pods-动画的探究/Pods-动画的探究.debug.xcconfig"; sourceTree = "<group>"; };
+		B62200392539B57800571E08 /* SeventhViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeventhViewController.h; sourceTree = "<group>"; };
+		B622003A2539B57800571E08 /* SeventhViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeventhViewController.m; sourceTree = "<group>"; };
 		B6873B982537EF480010D42B /* PresentingAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentingAnimationController.h; sourceTree = "<group>"; };
 		B6873B992537EF480010D42B /* PresentingAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentingAnimationController.m; sourceTree = "<group>"; };
 		B6873B9B2537F53F0010D42B /* DismissingAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissingAnimationController.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				B6873BA52539359C0010D42B /* PushAnimationController.m */,
 				B6873BAA25393ED80010D42B /* SixthViewController.h */,
 				B6873BAB25393ED80010D42B /* SixthViewController.m */,
+				B62200392539B57800571E08 /* SeventhViewController.h */,
+				B622003A2539B57800571E08 /* SeventhViewController.m */,
 				B69045142533F8FC0056CA2A /* Assets.xcassets */,
 				B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */,
 				B69045192533F8FC0056CA2A /* Info.plist */,
@@ -264,6 +269,7 @@
 			files = (
 				B69045292533FD060056CA2A /* SecondViewController.m in Sources */,
 				B6CC4D6D2537E3D900C28BB7 /* CustomVCTransitionViewController.m in Sources */,
+				B622003B2539B57800571E08 /* SeventhViewController.m in Sources */,
 				B6873BA3253865EA0010D42B /* CustomPushViewController.m in Sources */,
 				B690450A2533F8F40056CA2A /* AppDelegate.m in Sources */,
 				B6CC4D702537E3EE00C28BB7 /* CustomModalViewController.m in Sources */,
