@@ -46,6 +46,10 @@
     
 }
 
+- (void)translationBeginAnimation {
+    
+}
+
 - (void)testViewBeginAnimation {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     animation.toValue = [NSNumber numberWithFloat:-M_PI_2];//旋转90度
@@ -69,18 +73,36 @@
 }
 
 - (void)blueViewBeginAnimation {
+    //先要横向平移一个宽度，之后再旋转才能达到我们要的效果。平移动画未实现，还没有查找到相应的原因
+    CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:@"transform.position.x"];//横向移动
+    animation1.fromValue = @(50);
+    animation1.toValue = @(110);
+    animation1.duration = 0.5f;
+    animation1.beginTime = 0;
+    animation1.removedOnCompletion = NO;
+    animation1.fillMode = kCAFillModeForwards;
+//    [self.blueView.layer addAnimation:animation1 forKey:@"transform"];
+    
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     animation.toValue = [NSNumber numberWithFloat:-M_PI_2];//旋转90度
     animation.duration = 1.0f;
-    animation.beginTime = 0;
+    animation.beginTime = 0.5f;
     //如果不加这句话，动画会回归原点，此时表现为没有动画的样子
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
     //设置锚点
     self.blueView.layer.anchorPoint = CGPointMake(0, 1);//发生异常
     //设置position
-    self.blueView.layer.position = CGPointMake(0, 200);
-    [self.blueView.layer addAnimation:animation forKey:@"rotation"];
+    self.blueView.layer.position = CGPointMake(60, 200);
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.animations = @[animation1,animation];
+    group.duration = 1.5f;
+    group.removedOnCompletion = NO;
+    group.fillMode = kCAFillModeForwards;
+    group.repeatCount = 1;
+    
+    [self.blueView.layer addAnimation:group forKey:@"group"];
+//    [self.blueView.layer addAnimation:animation forKey:@"rotation"];
     /*
      使用默认锚点和默认的旋转位置时，逆时针旋转90度，锚点和position的位置没有发生变化
      */
