@@ -21,50 +21,30 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            uuid = "26163033-C95A-4173-B32E-88D6A03136FE"
+            uuid = "76643735-050B-48CA-83C5-DBAE3B2C99BE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x52a8;&#x753b;&#x7684;&#x63a2;&#x7a76;/SixthViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-beginAnimation"
-            landmarkType = "7">
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "07F26155-0724-4DCD-9F64-6B23269B8C16"
+            uuid = "53C063A9-3F0F-42C0-8C78-59BDC48CEA54"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x52a8;&#x753b;&#x7684;&#x63a2;&#x7a76;/SixthViewController.m"
+            filePath = "&#x52a8;&#x753b;&#x7684;&#x63a2;&#x7a76;/EighthViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-beginAnimation"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "85222233-AF0E-4485-A28C-47D8423212E2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x52a8;&#x753b;&#x7684;&#x63a2;&#x7a76;/SixthViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-beginAnimation"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "-animationDidStop:finished:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -29,6 +29,7 @@
 		B6CC4D5F253699C900C28BB7 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5E253699C900C28BB7 /* FourthViewController.m */; };
 		B6CC4D6D2537E3D900C28BB7 /* CustomVCTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */; };
 		B6CC4D702537E3EE00C28BB7 /* CustomModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */; };
+		B6F32E26254FFB5E009DC430 /* EighthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F32E25254FFB5E009DC430 /* EighthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomVCTransitionViewController.m; sourceTree = "<group>"; };
 		B6CC4D6E2537E3EE00C28BB7 /* CustomModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomModalViewController.h; sourceTree = "<group>"; };
 		B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomModalViewController.m; sourceTree = "<group>"; };
+		B6F32E24254FFB5E009DC430 /* EighthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EighthViewController.h; sourceTree = "<group>"; };
+		B6F32E25254FFB5E009DC430 /* EighthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EighthViewController.m; sourceTree = "<group>"; };
 		EABD8FFE13828BD6B40155C4 /* Pods-动画的探究.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-动画的探究.release.xcconfig"; path = "Target Support Files/Pods-动画的探究/Pods-动画的探究.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +167,8 @@
 				B6873BAB25393ED80010D42B /* SixthViewController.m */,
 				B62200392539B57800571E08 /* SeventhViewController.h */,
 				B622003A2539B57800571E08 /* SeventhViewController.m */,
+				B6F32E24254FFB5E009DC430 /* EighthViewController.h */,
+				B6F32E25254FFB5E009DC430 /* EighthViewController.m */,
 				B69045142533F8FC0056CA2A /* Assets.xcassets */,
 				B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */,
 				B69045192533F8FC0056CA2A /* Info.plist */,
@@ -276,6 +281,7 @@
 				B6873BAC25393ED80010D42B /* SixthViewController.m in Sources */,
 				B690451B2533F8FC0056CA2A /* main.m in Sources */,
 				B6873B9A2537EF480010D42B /* PresentingAnimationController.m in Sources */,
+				B6F32E26254FFB5E009DC430 /* EighthViewController.m in Sources */,
 				B6CC4D562535889700C28BB7 /* AlertView.m in Sources */,
 				B6873BA62539359C0010D42B /* PushAnimationController.m in Sources */,
 				B6873BA92539366A0010D42B /* PushInteractiveViewController.m in Sources */,

@@ -29,6 +29,8 @@
     testView.backgroundColor = [UIColor redColor];
     [self.view addSubview:testView];
     self.testView = testView;
+    NSLog(@"测试View的锚点坐标为x为%f,y为%f",testView.layer.anchorPoint.x,testView.layer.anchorPoint.y);
+    NSLog(@"测试position的位置为x为%f，y为%f",testView.layer.position.x,testView.layer.position.y);
     
     UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(0, 140, 100, 60)];
     blueView.backgroundColor = [UIColor blueColor];
@@ -41,13 +43,26 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     //点击空白处开始动画
-    [self blueViewBeginAnimation];
+//    [self blueViewBeginAnimation];
 //    [self testViewBeginAnimation];
+    [self translationBeginAnimation];
     
 }
 
 - (void)translationBeginAnimation {
-    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.position.x"];
+//    animation.fromValue = @(50);
+    animation.toValue = @(110);
+    animation.beginTime = 0;
+    animation.duration = 0.5f;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    //在没有设置锚点和position时，不会发生任何移动动画 移动方向好像是由锚点和position的连线决定的
+    self.blueView.layer.anchorPoint = CGPointMake(0, 0.5);
+    [self.blueView.layer addAnimation:animation forKey:@"translateOne"];
+    NSLog(@"--------------------平移后---------------");
+    NSLog(@"当前的锚点的坐标为x为%f,y为%f",self.blueView.layer.anchorPoint.x,self.blueView.layer.anchorPoint.y);
+    NSLog(@"当前position的位置为x为%f,y为%f",self.blueView.layer.position.x,self.blueView.layer.position.y);
 }
 
 - (void)testViewBeginAnimation {
