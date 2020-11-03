@@ -8,8 +8,11 @@
 
 #import "CustomPushViewController.h"
 #import "Masonry.h"
+#import "FifthViewController.h"
 
 @interface CustomPushViewController ()
+
+@property (nonatomic, strong) UIButton *button;
 
 @end
 
@@ -22,8 +25,23 @@
     self.navigationController.navigationBar.translucent = NO;
     self.view.backgroundColor = [UIColor yellowColor];
     self.title = @"自定义push转场后的控制器";
+    self.button.center = self.view.center;
+    [self.view addSubview:self.button];
 }
 
+- (UIButton *)button {
+    if (_button) {
+        return _button;
+    }
+    _button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+    [_button setTitle:@"测试" forState:UIControlStateNormal];
+    [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
+    return _button;
+}
 
+- (void)buttonClicked {
+    NSLog(@"点击了按钮");
+}
 
 @end

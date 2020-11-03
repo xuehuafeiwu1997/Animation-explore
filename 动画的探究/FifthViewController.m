@@ -19,6 +19,11 @@
 
 @implementation FifthViewController
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.navigationController.delegate = self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,7 +31,6 @@
     self.view.backgroundColor = [UIColor blueColor];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"push的自定义转场动画";
-    self.navigationController.delegate = self;
     
     self.pushButton.center = self.view.center;
     [self.view addSubview:self.pushButton];
@@ -55,6 +59,9 @@
 //}
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
-    return [[PushAnimationController alloc] init];
+    if (operation == UINavigationControllerOperationPush) {
+        return [[PushAnimationController alloc] init];
+    }
+    return nil;
 }
 @end

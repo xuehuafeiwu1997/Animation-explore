@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PushAnimationController : NSObject<UIViewControllerAnimatedTransitioning>
 
+@property (nonatomic, copy) dispatch_block_t completeBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

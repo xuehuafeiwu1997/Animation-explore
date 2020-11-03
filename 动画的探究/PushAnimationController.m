@@ -8,6 +8,10 @@
 
 #import "PushAnimationController.h"
 
+@interface PushAnimationController()<CAAnimationDelegate>
+
+@end
+
 @implementation PushAnimationController
 
 //用来处理具体的动画
@@ -20,15 +24,10 @@
     [[transitionContext containerView] addSubview:toVC.view];
     UIView *toView = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
     [self beginAnimation:toView];
-//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-//    animation.fromValue = [NSNumber numberWithFloat:M_PI_2];
-//    animation.duration = 1.0;
-//    animation.beginTime = 0;
-//    animation.removedOnCompletion = NO;
-//    animation.fillMode = kCAFillModeForwards;
-//    toVC.view.layer.anchorPoint = CGPointMake(0, 1);
-//    [toVC.view.layer addAnimation:animation forKey:@"rotation"];
-//    NSLog(@"当前的toView");
+    self.completeBlock = ^{
+        ////一定要记得动画完成后执行此方法，让系统管理 navigation
+        [transitionContext completeTransition:YES];
+    };
 }
 
 - (void)beginAnimation:(UIView *)toView {
@@ -40,6 +39,7 @@
     animation1.toValue = @(0);
     animation1.duration = 2.0f;
     animation1.beginTime = 0.f;
+    animation1.delegate = self;
     animation1.removedOnCompletion = NO;
     animation1.fillMode = kCAFillModeForwards;
     toView.layer.anchorPoint = CGPointMake(1, 1);
@@ -50,6 +50,20 @@
 //设置动画执行的时长
 - (NSTimeInterval)transitionDuration:(nullable id<UIViewControllerContextTransitioning>)transitionContext {
     return 1.0f;
+}
+
+#pragma mark - CAAnimationDelegate
+- (void)animationDidStart:(CAAnimation *)anim {
+    NSLog(@"开始执行自定义的动画");
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    if (flag) {
+        NSLog(@"动画正常结束");
+    }
+    if (self.completeBlock) {
+        self.completeBlock();
+    }
 }
 
 @end
