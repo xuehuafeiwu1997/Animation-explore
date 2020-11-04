@@ -9,7 +9,7 @@
 #import "CustomPopGestureViewController.h"
 #import "PopAnimation.h"
 
-@interface CustomPopGestureViewController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
+@interface CustomPopGestureViewController ()<UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UIPanGestureRecognizer *pan;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactiveTransition;
@@ -39,7 +39,6 @@
         return _pan;
     }
     _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    _pan.delegate = self;
     return _pan;
 }
 
@@ -49,10 +48,8 @@
     }
     CGPoint point = [pan translationInView:self.view];
     CGFloat percent = point.x / self.view.bounds.size.width;
+    NSLog(@"percent的进度值为:%f",percent);
     percent = MIN(MAX(0, percent), 1);
-    if (percent <= 0) {
-        return;
-    }
     if (pan.state == UIGestureRecognizerStateBegan) {
         _interactiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
         [self.navigationController popViewControllerAnimated:YES];

@@ -38,7 +38,14 @@
 //    [[transitionContext containerView] addSubview:toVC.view];
     [[transitionContext containerView] insertSubview:toVC.view belowSubview:fromVC.view];
     NSTimeInterval duration = [self transitionDuration:transitionContext];
-    [self beginFromViewAnimation:fromView WithDuration:duration];
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+        fromVC.view.frame = CGRectMake(width, 0, width, height);
+    } completion:^(BOOL finished) {
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    }];
+    
     self.completeBlock = ^{
         //当动画执行完时，这个方法必须调用，否则系统会认为你的所有操作都在动画执行过程中
 //        [transitionContext completeTransition:YES];

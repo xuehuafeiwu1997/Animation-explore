@@ -36,14 +36,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9EABA6E7-4CF2-427C-BE31-7AFF940F81F1"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x52a8;&#x753b;&#x7684;&#x63a2;&#x7a76;/PopAnimation.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-animateTransition:"
             landmarkType = "7">
          </BreakpointContent>
@@ -51,15 +51,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1E512F7B-A1F0-4FED-8358-D780FFCDE47B"
+            uuid = "1299E202-67FF-4C74-81B4-E2C26D8A8E50"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x52a8;&#x753b;&#x7684;&#x63a2;&#x7a76;/CustomPopGestureViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-pan:"
             landmarkType = "7">
          </BreakpointContent>
