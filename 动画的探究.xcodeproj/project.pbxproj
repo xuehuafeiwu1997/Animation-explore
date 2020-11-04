@@ -25,6 +25,7 @@
 		B69045292533FD060056CA2A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045282533FD060056CA2A /* SecondViewController.m */; };
 		B69DF4F0255148CB00D161BF /* NinthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DF4EF255148CB00D161BF /* NinthViewController.m */; };
 		B69DF4F4255149F000D161BF /* CustomPopGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DF4F3255149F000D161BF /* CustomPopGestureViewController.m */; };
+		B69DF5822552596500D161BF /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DF5812552596500D161BF /* PopAnimation.m */; };
 		B6CC4D562535889700C28BB7 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D552535889700C28BB7 /* AlertView.m */; };
 		B6CC4D592535ADC900C28BB7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */; };
 		B6CC4D5C2535B26600C28BB7 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */; };
@@ -70,6 +71,8 @@
 		B69DF4EF255148CB00D161BF /* NinthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NinthViewController.m; sourceTree = "<group>"; };
 		B69DF4F2255149F000D161BF /* CustomPopGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPopGestureViewController.h; sourceTree = "<group>"; };
 		B69DF4F3255149F000D161BF /* CustomPopGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPopGestureViewController.m; sourceTree = "<group>"; };
+		B69DF5802552596500D161BF /* PopAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
+		B69DF5812552596500D161BF /* PopAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
 		B6CC4D542535889700C28BB7 /* AlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		B6CC4D552535889700C28BB7 /* AlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
 		B6CC4D572535ADC900C28BB7 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				B69DF4EF255148CB00D161BF /* NinthViewController.m */,
 				B69DF4F2255149F000D161BF /* CustomPopGestureViewController.h */,
 				B69DF4F3255149F000D161BF /* CustomPopGestureViewController.m */,
+				B69DF5802552596500D161BF /* PopAnimation.h */,
+				B69DF5812552596500D161BF /* PopAnimation.m */,
 				B69045142533F8FC0056CA2A /* Assets.xcassets */,
 				B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */,
 				B69045192533F8FC0056CA2A /* Info.plist */,
@@ -297,6 +302,7 @@
 				B6873BA62539359C0010D42B /* PushAnimationController.m in Sources */,
 				B6873BA92539366A0010D42B /* PushInteractiveViewController.m in Sources */,
 				B69DF4F4255149F000D161BF /* CustomPopGestureViewController.m in Sources */,
+				B69DF5822552596500D161BF /* PopAnimation.m in Sources */,
 				B6CC4D5C2535B26600C28BB7 /* ExampleCell.m in Sources */,
 				B69045232533F95C0056CA2A /* FirstViewController.m in Sources */,
 				B6CC4D5F253699C900C28BB7 /* FourthViewController.m in Sources */,
