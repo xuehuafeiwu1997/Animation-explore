@@ -11,7 +11,7 @@
 #import "PushAnimationController.h"
 #import "PushInteractiveViewController.h"
 
-@interface FifthViewController ()
+@interface FifthViewController ()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIButton *pushButton;
 
@@ -19,9 +19,8 @@
 
 @implementation FifthViewController
 
-- (void) viewDidAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.navigationController.delegate = self;
 }
 
 - (void)viewDidLoad {
@@ -34,6 +33,11 @@
     
     self.pushButton.center = self.view.center;
     [self.view addSubview:self.pushButton];
+    
+    self.navigationController.delegate = self;
+    
+    //自定义push动画后，测滑返回手势失效(需要加上这样代码)
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
 - (UIButton *)pushButton {
@@ -53,11 +57,6 @@
 }
 
 #pragma mark - UINavigationControllerDelegate
-//当这个协议方法存在时，执行的是交互式的转场动画，下方的协议方法不再实现
-//- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
-//    return [[PushInteractiveViewController alloc] init];
-//}
-
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
     if (operation == UINavigationControllerOperationPush) {
         return [[PushAnimationController alloc] init];
