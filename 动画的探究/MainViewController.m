@@ -95,10 +95,6 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
     if (indexPath.row == 7) {
-        FourthViewController *vc = [[FourthViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    if (indexPath.row == 8) {
         EightViewController *vc = [[EightViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
