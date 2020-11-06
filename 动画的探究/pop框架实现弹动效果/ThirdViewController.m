@@ -8,11 +8,10 @@
 
 #import "ThirdViewController.h"
 #import <pop/POP.h>
-#import "ExampleCell.h"
 
-@interface ThirdViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ThirdViewController ()
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIView *myView;
 
 @end
 
@@ -22,50 +21,38 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"pop框架的动画使用";
+    self.title = @"pop框架实现弹簧动画";
     self.navigationController.navigationBar.translucent = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.view addSubview:self.tableView];
-}
-#pragma mark - delegate/dataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+//    [self.view addSubview:self.tableView];
+    self.myView.center = self.view.center;
+    [self.view addSubview:self.myView];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ExampleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExampleCell"];
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Facebook like And Send";
-    } else if (indexPath.row == 1) {
-        cell.textLabel.text = @"Wrong password";
-    } else if (indexPath.row == 2) {
-        cell.textLabel.text = @"Custom VC Transition";
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    //初始化弹簧动画
+    POPSpringAnimation *springAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerBounds];
+    springAnimation.springSpeed = 0;//设置动画的速度
+    springAnimation.springBounciness = 10;//设置弹性大小
+    springAnimation.dynamicsFriction = 10;//设置阻力的大小
+    springAnimation.dynamicsTension = 100;//设置张力的大小
+    if (self.myView.frame.size.width == 100) {
+        springAnimation.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 50, 50)];
+    } else {
+        springAnimation.fromValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 100, 100)];
     }
-    return cell;
+    
+    //添加动画
+    [self.myView.layer pop_addAnimation:springAnimation forKey:@"animation"];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //点击选中的功能
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-#pragma mark - lazy load
-- (UITableView *)tableView {
-    if (_tableView) {
-        return _tableView;
+- (UIView *)myView {
+    if (_myView) {
+        return _myView;
     }
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    _tableView.backgroundColor = [UIColor whiteColor];
-    _tableView.showsVerticalScrollIndicator = NO;
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    [_tableView registerClass:[ExampleCell class] forCellReuseIdentifier:@"ExampleCell"];
-    return _tableView;
+    _myView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    _myView.backgroundColor = [UIColor yellowColor];
+    return _myView;
 }
-
 @end

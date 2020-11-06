@@ -25,7 +25,6 @@
 		B69DF4F4255149F000D161BF /* CustomPopGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DF4F3255149F000D161BF /* CustomPopGestureViewController.m */; };
 		B69DF5822552596500D161BF /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DF5812552596500D161BF /* PopAnimation.m */; };
 		B6CC4D592535ADC900C28BB7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */; };
-		B6CC4D5C2535B26600C28BB7 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */; };
 		B6CC4D5F253699C900C28BB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5E253699C900C28BB7 /* SecondViewController.m */; };
 		B6CC4D6D2537E3D900C28BB7 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6C2537E3D800C28BB7 /* SixthViewController.m */; };
 		B6CC4D702537E3EE00C28BB7 /* CustomModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */; };
@@ -68,8 +67,6 @@
 		B69DF5812552596500D161BF /* PopAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
 		B6CC4D572535ADC900C28BB7 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		B6CC4D5A2535B26600C28BB7 /* ExampleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
-		B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
 		B6CC4D5D253699C900C28BB7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B6CC4D5E253699C900C28BB7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B6CC4D6B2537E3D800C28BB7 /* SixthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
@@ -174,8 +171,6 @@
 			children = (
 				B6CC4D572535ADC900C28BB7 /* ThirdViewController.h */,
 				B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */,
-				B6CC4D5A2535B26600C28BB7 /* ExampleCell.h */,
-				B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */,
 			);
 			path = "pop框架实现弹动效果";
 			sourceTree = "<group>";
@@ -349,7 +344,6 @@
 				B6873BA92539366A0010D42B /* PushInteractiveViewController.m in Sources */,
 				B69DF4F4255149F000D161BF /* CustomPopGestureViewController.m in Sources */,
 				B69DF5822552596500D161BF /* PopAnimation.m in Sources */,
-				B6CC4D5C2535B26600C28BB7 /* ExampleCell.m in Sources */,
 				B69045232533F95C0056CA2A /* FirstViewController.m in Sources */,
 				B6CC4D5F253699C900C28BB7 /* SecondViewController.m in Sources */,
 				B6873B9D2537F53F0010D42B /* DismissingAnimationController.m in Sources */,
