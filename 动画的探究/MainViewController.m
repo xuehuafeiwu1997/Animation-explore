@@ -14,8 +14,8 @@
 #import "FifthViewController.h"
 #import "SixthViewController.h"
 #import "SeventhViewController.h"
-#import "EighthViewController.h"
-#import "NinthViewController.h"
+#import "FourthViewController.h"
+#import "EightViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -55,7 +55,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 9;
+    return 8;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -95,11 +95,11 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
     if (indexPath.row == 7) {
-        EighthViewController *vc = [[EighthViewController alloc] init];
+        FourthViewController *vc = [[FourthViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     if (indexPath.row == 8) {
-        NinthViewController *vc = [[NinthViewController alloc] init];
+        EightViewController *vc = [[EightViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

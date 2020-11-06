@@ -1,21 +1,21 @@
 //
-//  NinthViewController.m
+//  EightViewController.m
 //  动画的探究
 //
 //  Created by 许明洋 on 2020/11/3.
 //  Copyright © 2020 许明洋. All rights reserved.
 //
 
-#import "NinthViewController.h"
+#import "EightViewController.h"
 #import "CustomPopGestureViewController.h"
 
-@interface NinthViewController ()
+@interface EightViewController ()
 
 @property (nonatomic, strong) UIButton *button;
 
 @end
 
-@implementation NinthViewController
+@implementation EightViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

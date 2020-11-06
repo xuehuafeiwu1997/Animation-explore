@@ -1,8 +1,8 @@
 //
-//  AlertView.h
+//  EightViewController.h
 //  动画的探究
 //
-//  Created by 许明洋 on 2020/10/13.
+//  Created by 许明洋 on 2020/11/3.
 //  Copyright © 2020 许明洋. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AlertView : UIView
-
-- (void)showToView:(UIView *)view;
+@interface EightViewController : UIViewController
 
 @end
 

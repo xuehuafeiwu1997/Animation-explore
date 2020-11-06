@@ -14,8 +14,8 @@
 #import "FifthViewController.h"
 #import "SixthViewController.h"
 #import "SeventhViewController.h"
-#import "EighthViewController.h"
-#import "NinthViewController.h"
+#import "FourthViewController.h"
+#import "EightViewController.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
