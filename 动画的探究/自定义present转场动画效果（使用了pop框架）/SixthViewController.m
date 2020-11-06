@@ -6,18 +6,18 @@
 //  Copyright © 2020 许明洋. All rights reserved.
 //
 
-#import "CustomVCTransitionViewController.h"
+#import "SixthViewController.h"
 #import "CustomModalViewController.h"
 #import "PresentingAnimationController.h"
 #import "DismissingAnimationController.h"
 
-@interface CustomVCTransitionViewController ()
+@interface SixthViewController ()
 
 @property (nonatomic, strong) UIButton *presentButton;
 
 @end
 
-@implementation CustomVCTransitionViewController
+@implementation SixthViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

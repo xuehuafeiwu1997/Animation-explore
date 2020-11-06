@@ -15,7 +15,6 @@
 		B6873BA3253865EA0010D42B /* CustomPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873BA2253865EA0010D42B /* CustomPushViewController.m */; };
 		B6873BA62539359C0010D42B /* PushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873BA52539359C0010D42B /* PushAnimationController.m */; };
 		B6873BA92539366A0010D42B /* PushInteractiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873BA82539366A0010D42B /* PushInteractiveViewController.m */; };
-		B6873BAC25393ED80010D42B /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873BAB25393ED80010D42B /* SixthViewController.m */; };
 		B690450A2533F8F40056CA2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045092533F8F40056CA2A /* AppDelegate.m */; };
 		B69045152533F8FC0056CA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69045142533F8FC0056CA2A /* Assets.xcassets */; };
 		B69045182533F8FC0056CA2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */; };
@@ -28,7 +27,7 @@
 		B6CC4D592535ADC900C28BB7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */; };
 		B6CC4D5C2535B26600C28BB7 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */; };
 		B6CC4D5F253699C900C28BB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D5E253699C900C28BB7 /* SecondViewController.m */; };
-		B6CC4D6D2537E3D900C28BB7 /* CustomVCTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */; };
+		B6CC4D6D2537E3D900C28BB7 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6C2537E3D800C28BB7 /* SixthViewController.m */; };
 		B6CC4D702537E3EE00C28BB7 /* CustomModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */; };
 		B6F32E26254FFB5E009DC430 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F32E25254FFB5E009DC430 /* FourthViewController.m */; };
 /* End PBXBuildFile section */
@@ -50,8 +49,6 @@
 		B6873BA52539359C0010D42B /* PushAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushAnimationController.m; sourceTree = "<group>"; };
 		B6873BA72539366A0010D42B /* PushInteractiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushInteractiveViewController.h; sourceTree = "<group>"; };
 		B6873BA82539366A0010D42B /* PushInteractiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushInteractiveViewController.m; sourceTree = "<group>"; };
-		B6873BAA25393ED80010D42B /* SixthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
-		B6873BAB25393ED80010D42B /* SixthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
 		B69045052533F8F40056CA2A /* 动画的探究.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "动画的探究.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69045082533F8F40056CA2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B69045092533F8F40056CA2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,8 +72,8 @@
 		B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
 		B6CC4D5D253699C900C28BB7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B6CC4D5E253699C900C28BB7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		B6CC4D6B2537E3D800C28BB7 /* CustomVCTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomVCTransitionViewController.h; sourceTree = "<group>"; };
-		B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomVCTransitionViewController.m; sourceTree = "<group>"; };
+		B6CC4D6B2537E3D800C28BB7 /* SixthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
+		B6CC4D6C2537E3D800C28BB7 /* SixthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
 		B6CC4D6E2537E3EE00C28BB7 /* CustomModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomModalViewController.h; sourceTree = "<group>"; };
 		B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomModalViewController.m; sourceTree = "<group>"; };
 		B6F32E24254FFB5E009DC430 /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
@@ -134,52 +131,114 @@
 		B69045072533F8F40056CA2A /* 动画的探究 */ = {
 			isa = PBXGroup;
 			children = (
+				B69DF62D2554F83700D161BF /* 实现类似系统pop时左滑返回的效果 */,
+				B69DF62C2554F81100D161BF /* 由于锚点变化导致的旋转异常 */,
+				B69DF6292554F7E800D161BF /* 自定义present转场动画效果（使用了pop框架） */,
+				B69DF6262554F7C700D161BF /* 自定义push转场动画效果 */,
+				B69DF6252554F78B00D161BF /* CABasicAnimation实现绕定点旋转效果 */,
+				B69DF6202554F76E00D161BF /* pop框架实现弹动效果 */,
+				B69DF61D2554F56400D161BF /* CABasicAnimation实现平移、放大和旋转 */,
+				B69DF61B2554F54800D161BF /* UIView Animation动画效果 */,
 				B69045082533F8F40056CA2A /* AppDelegate.h */,
 				B69045092533F8F40056CA2A /* AppDelegate.m */,
 				B69045242533F9A70056CA2A /* MainViewController.h */,
 				B69045252533F9A70056CA2A /* MainViewController.m */,
-				B69045212533F95C0056CA2A /* FirstViewController.h */,
-				B69045222533F95C0056CA2A /* FirstViewController.m */,
-				B6CC4D5D253699C900C28BB7 /* SecondViewController.h */,
-				B6CC4D5E253699C900C28BB7 /* SecondViewController.m */,
-				B6CC4D572535ADC900C28BB7 /* ThirdViewController.h */,
-				B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */,
-				B6CC4D5A2535B26600C28BB7 /* ExampleCell.h */,
-				B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */,
-				B6CC4D6B2537E3D800C28BB7 /* CustomVCTransitionViewController.h */,
-				B6CC4D6C2537E3D800C28BB7 /* CustomVCTransitionViewController.m */,
-				B6CC4D6E2537E3EE00C28BB7 /* CustomModalViewController.h */,
-				B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */,
-				B6873B982537EF480010D42B /* PresentingAnimationController.h */,
-				B6873B992537EF480010D42B /* PresentingAnimationController.m */,
-				B6873B9B2537F53F0010D42B /* DismissingAnimationController.h */,
-				B6873B9C2537F53F0010D42B /* DismissingAnimationController.m */,
-				B6873B9E253864C10010D42B /* FifthViewController.h */,
-				B6873B9F253864C10010D42B /* FifthViewController.m */,
-				B6873BA1253865EA0010D42B /* CustomPushViewController.h */,
-				B6873BA2253865EA0010D42B /* CustomPushViewController.m */,
-				B6873BA72539366A0010D42B /* PushInteractiveViewController.h */,
-				B6873BA82539366A0010D42B /* PushInteractiveViewController.m */,
-				B6873BA42539359C0010D42B /* PushAnimationController.h */,
-				B6873BA52539359C0010D42B /* PushAnimationController.m */,
-				B6873BAA25393ED80010D42B /* SixthViewController.h */,
-				B6873BAB25393ED80010D42B /* SixthViewController.m */,
-				B62200392539B57800571E08 /* SeventhViewController.h */,
-				B622003A2539B57800571E08 /* SeventhViewController.m */,
-				B6F32E24254FFB5E009DC430 /* FourthViewController.h */,
-				B6F32E25254FFB5E009DC430 /* FourthViewController.m */,
-				B69DF4EE255148CB00D161BF /* EightViewController.h */,
-				B69DF4EF255148CB00D161BF /* EightViewController.m */,
-				B69DF4F2255149F000D161BF /* CustomPopGestureViewController.h */,
-				B69DF4F3255149F000D161BF /* CustomPopGestureViewController.m */,
-				B69DF5802552596500D161BF /* PopAnimation.h */,
-				B69DF5812552596500D161BF /* PopAnimation.m */,
 				B69045142533F8FC0056CA2A /* Assets.xcassets */,
 				B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */,
 				B69045192533F8FC0056CA2A /* Info.plist */,
 				B690451A2533F8FC0056CA2A /* main.m */,
 			);
 			path = "动画的探究";
+			sourceTree = "<group>";
+		};
+		B69DF61B2554F54800D161BF /* UIView Animation动画效果 */ = {
+			isa = PBXGroup;
+			children = (
+				B69045212533F95C0056CA2A /* FirstViewController.h */,
+				B69045222533F95C0056CA2A /* FirstViewController.m */,
+			);
+			path = "UIView Animation动画效果";
+			sourceTree = "<group>";
+		};
+		B69DF61D2554F56400D161BF /* CABasicAnimation实现平移、放大和旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC4D5D253699C900C28BB7 /* SecondViewController.h */,
+				B6CC4D5E253699C900C28BB7 /* SecondViewController.m */,
+			);
+			path = "CABasicAnimation实现平移、放大和旋转";
+			sourceTree = "<group>";
+		};
+		B69DF6202554F76E00D161BF /* pop框架实现弹动效果 */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC4D572535ADC900C28BB7 /* ThirdViewController.h */,
+				B6CC4D582535ADC900C28BB7 /* ThirdViewController.m */,
+				B6CC4D5A2535B26600C28BB7 /* ExampleCell.h */,
+				B6CC4D5B2535B26600C28BB7 /* ExampleCell.m */,
+			);
+			path = "pop框架实现弹动效果";
+			sourceTree = "<group>";
+		};
+		B69DF6252554F78B00D161BF /* CABasicAnimation实现绕定点旋转效果 */ = {
+			isa = PBXGroup;
+			children = (
+				B6F32E24254FFB5E009DC430 /* FourthViewController.h */,
+				B6F32E25254FFB5E009DC430 /* FourthViewController.m */,
+			);
+			path = "CABasicAnimation实现绕定点旋转效果";
+			sourceTree = "<group>";
+		};
+		B69DF6262554F7C700D161BF /* 自定义push转场动画效果 */ = {
+			isa = PBXGroup;
+			children = (
+				B6873BA72539366A0010D42B /* PushInteractiveViewController.h */,
+				B6873BA82539366A0010D42B /* PushInteractiveViewController.m */,
+				B6873BA42539359C0010D42B /* PushAnimationController.h */,
+				B6873BA52539359C0010D42B /* PushAnimationController.m */,
+				B6873B9E253864C10010D42B /* FifthViewController.h */,
+				B6873B9F253864C10010D42B /* FifthViewController.m */,
+				B6873BA1253865EA0010D42B /* CustomPushViewController.h */,
+				B6873BA2253865EA0010D42B /* CustomPushViewController.m */,
+			);
+			path = "自定义push转场动画效果";
+			sourceTree = "<group>";
+		};
+		B69DF6292554F7E800D161BF /* 自定义present转场动画效果（使用了pop框架） */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC4D6B2537E3D800C28BB7 /* SixthViewController.h */,
+				B6CC4D6C2537E3D800C28BB7 /* SixthViewController.m */,
+				B6CC4D6E2537E3EE00C28BB7 /* CustomModalViewController.h */,
+				B6CC4D6F2537E3EE00C28BB7 /* CustomModalViewController.m */,
+				B6873B982537EF480010D42B /* PresentingAnimationController.h */,
+				B6873B992537EF480010D42B /* PresentingAnimationController.m */,
+				B6873B9B2537F53F0010D42B /* DismissingAnimationController.h */,
+				B6873B9C2537F53F0010D42B /* DismissingAnimationController.m */,
+			);
+			path = "自定义present转场动画效果（使用了pop框架）";
+			sourceTree = "<group>";
+		};
+		B69DF62C2554F81100D161BF /* 由于锚点变化导致的旋转异常 */ = {
+			isa = PBXGroup;
+			children = (
+				B62200392539B57800571E08 /* SeventhViewController.h */,
+				B622003A2539B57800571E08 /* SeventhViewController.m */,
+			);
+			path = "由于锚点变化导致的旋转异常";
+			sourceTree = "<group>";
+		};
+		B69DF62D2554F83700D161BF /* 实现类似系统pop时左滑返回的效果 */ = {
+			isa = PBXGroup;
+			children = (
+				B69DF4EE255148CB00D161BF /* EightViewController.h */,
+				B69DF4EF255148CB00D161BF /* EightViewController.m */,
+				B69DF4F2255149F000D161BF /* CustomPopGestureViewController.h */,
+				B69DF4F3255149F000D161BF /* CustomPopGestureViewController.m */,
+				B69DF5802552596500D161BF /* PopAnimation.h */,
+				B69DF5812552596500D161BF /* PopAnimation.m */,
+			);
+			path = "实现类似系统pop时左滑返回的效果";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,12 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CC4D6D2537E3D900C28BB7 /* CustomVCTransitionViewController.m in Sources */,
+				B6CC4D6D2537E3D900C28BB7 /* SixthViewController.m in Sources */,
 				B622003B2539B57800571E08 /* SeventhViewController.m in Sources */,
 				B6873BA3253865EA0010D42B /* CustomPushViewController.m in Sources */,
 				B690450A2533F8F40056CA2A /* AppDelegate.m in Sources */,
 				B6CC4D702537E3EE00C28BB7 /* CustomModalViewController.m in Sources */,
-				B6873BAC25393ED80010D42B /* SixthViewController.m in Sources */,
 				B69DF4F0255148CB00D161BF /* EightViewController.m in Sources */,
 				B690451B2533F8FC0056CA2A /* main.m in Sources */,
 				B6873B9A2537EF480010D42B /* PresentingAnimationController.m in Sources */,

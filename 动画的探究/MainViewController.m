@@ -60,6 +60,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"使用UIView animation实现动画";
+    }
+    if (indexPath.row == 1) {
+        cell.textLabel.text = @"使用CABasicAnimation实现平移、放大和旋转";
+    }
+    if (indexPath.row == 2) {
+        cell.textLabel.text = @"使用pop框架实现相应的动画";
+    }
     cell.textLabel.text = [NSString stringWithFormat:@"第%ld个cell",(long)indexPath.row];
     return cell;
 }

@@ -7,15 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "FirstViewController.h"
-#import "SecondViewController.h"
-#import "ThirdViewController.h"
-#import "CustomVCTransitionViewController.h"
-#import "FifthViewController.h"
-#import "SixthViewController.h"
-#import "SeventhViewController.h"
-#import "FourthViewController.h"
-#import "EightViewController.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -30,15 +21,6 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
-//    FirstViewController *vc = [[FirstViewController alloc] init];
-//    SecondViewController *vc = [[SecondViewController alloc] init];
-//    ThirdViewController *vc = [[ThirdViewController alloc] init];
-//    CustomVCTransitionViewController *vc = [[CustomVCTransitionViewController alloc] init];
-//    FifthViewController *vc = [[FifthViewController alloc] init];
-//    SixthViewController *vc = [[SixthViewController alloc] init];
-//    SeventhViewController *vc = [[SeventhViewController alloc] init];
-//    EighthViewController *vc = [[EighthViewController alloc] init];
-//    NinthViewController *vc = [[NinthViewController alloc] init];
     MainViewController *vc = [[MainViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
