@@ -9,7 +9,7 @@
 #import "SecondViewController.h"
 #import "Masonry.h"
 
-@interface SecondViewController ()
+@interface SecondViewController ()<CAAnimationDelegate>
 
 @property (nonatomic, strong) UIView *myView;
 @property (nonatomic, strong) UIButton *transformButton;//平移按钮
@@ -109,6 +109,7 @@
     animation1.duration = 1.0f;
     animation1.byValue = @(100);
     animation1.beginTime = 0.f;
+    animation1.delegate = self;
     //动画维持结束后的状态
     animation1.removedOnCompletion = NO;
     animation1.fillMode = kCAFillModeForwards;
@@ -140,6 +141,19 @@
     animation3.removedOnCompletion = NO;
     animation3.fillMode = kCAFillModeForwards;
     [self.myView.layer addAnimation:animation3 forKey:@"animation3"];
+}
+
+#pragma mark - CAAnimationDelegate
+- (void)animationDidStart:(CAAnimation *)anim {
+    NSLog(@"动画开始执行");
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    if (flag) {
+        NSLog(@"动画正常结束");
+    } else {
+        NSLog(@"动画被打断，未正常结束");
+    }
 }
 
 @end

@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
     
     self.navigationController.navigationBar.translucent = NO;
-    self.title = @"自定义转场动画";
+    self.title = @"自定义present的转场动画";
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.presentButton.center = self.view.center;

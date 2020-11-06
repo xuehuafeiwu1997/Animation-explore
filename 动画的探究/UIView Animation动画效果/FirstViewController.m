@@ -41,6 +41,8 @@
     [UIView animateWithDuration:1 animations:^{
         self.myView.frame = CGRectMake(200, 300, 100, 100);
         self.myView.backgroundColor = [UIColor blueColor];
+    } completion:^(BOOL finished) {
+        NSLog(@"动画效果完成");
     }];
 }
 

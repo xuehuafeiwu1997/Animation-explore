@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"旋转-平移-旋转动画组";
+    self.title = @"CABasicAnimation实现绕定点旋转";
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
     [self.view addSubview:self.testView];
@@ -33,12 +33,10 @@
 
 - (void)beginAnimation {
     NSLog(@"开始动画效果");
-    NSLog(@"开始顺时针旋转90度动画");
     CABasicAnimation *animation1 = [CABasicAnimation animation];
     //旋转必须在前面加上transform
     animation1.keyPath = @"transform.rotation.z";
     animation1.fromValue = @(M_PI_2);
-//    animation1.byValue = @(M_PI_2);
     animation1.toValue = @(0);
     animation1.duration = 2.0f;
     animation1.beginTime = 0.f;
@@ -54,44 +52,39 @@
 //    [self beginTranslateAnimation];
 }
 
-- (void)resetOriginState {
-    /*
-     如果不注销这部分代码，那么在animation1动画执行完毕之后，会立刻将动画复原，之后再在原油的动画的基础上执行逆时针旋转90度
-     注销这部分代码之后，动画的效果和符合我们的预期
-     */
-//    if ([self.blueView.layer animationForKey:@"animation1"]) {
-//        [self.blueView.layer removeAnimationForKey:@"animation1"];
-//    }
-    CABasicAnimation *animation2 = [CABasicAnimation animation];
-    animation2.keyPath = @"transform.rotation.z";
-    animation2.byValue = @(-M_PI_2);
-    animation2.duration = 5.0f;
-    animation2.beginTime = 0.f;
-    animation2.removedOnCompletion = NO;
-    animation2.fillMode = kCAFillModeForwards;
-    self.blueView.layer.anchorPoint = CGPointMake(1, 1);
-    self.blueView.layer.position = CGPointMake(60, 200);
-    [self.blueView.layer addAnimation:animation2 forKey:@"animation2"];
-}
+//- (void)resetOriginState {
+//    /*
+//     如果不注销这部分代码，那么在animation1动画执行完毕之后，会立刻将动画复原，之后再在原有的动画的基础上执行逆时针旋转90度
+//     注销这部分代码之后，动画的效果和符合我们的预期
+//     */
+////    if ([self.blueView.layer animationForKey:@"animation1"]) {
+////        [self.blueView.layer removeAnimationForKey:@"animation1"];
+////    }
+//    CABasicAnimation *animation2 = [CABasicAnimation animation];
+//    animation2.keyPath = @"transform.rotation.z";
+//    animation2.byValue = @(-M_PI_2);
+//    animation2.duration = 5.0f;
+//    animation2.beginTime = 0.f;
+//    animation2.removedOnCompletion = NO;
+//    animation2.fillMode = kCAFillModeForwards;
+//    self.blueView.layer.anchorPoint = CGPointMake(1, 1);
+//    self.blueView.layer.position = CGPointMake(60, 200);
+//    [self.blueView.layer addAnimation:animation2 forKey:@"animation2"];
+//}
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"当前的anchorPoint的值为%f,%f",self.blueView.layer.anchorPoint.x,self.blueView.layer.anchorPoint.y);
-    NSLog(@"当前的position的值为%f,%f",self.blueView.layer.position.x,self.blueView.layer.position.y);
-}
-
-- (void)beginTranslateAnimation {
-    NSLog(@"开始平移动画");
-    //在使用animationWithKeyPath时，不应该在前面加translation
-    CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:@"position.x"];
-//    animation1.keyPath = @"position.x";
-//    animation1.byValue = @(50);
-    animation1.toValue = @(200);
-    animation1.duration = 1.0f;
-    animation1.beginTime = 0.f;
-    animation1.removedOnCompletion = NO;
-    animation1.fillMode = kCAFillModeForwards;
-    [self.blueView.layer addAnimation:animation1 forKey:@"animation1"];
-}
+//- (void)beginTranslateAnimation {
+//    NSLog(@"开始平移动画");
+//    //在使用animationWithKeyPath时，不应该在前面加translation
+//    CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:@"position.x"];
+////    animation1.keyPath = @"position.x";
+////    animation1.byValue = @(50);
+//    animation1.toValue = @(200);
+//    animation1.duration = 1.0f;
+//    animation1.beginTime = 0.f;
+//    animation1.removedOnCompletion = NO;
+//    animation1.fillMode = kCAFillModeForwards;
+//    [self.blueView.layer addAnimation:animation1 forKey:@"animation1"];
+//}
 
 - (UIView *)testView {
     if (_testView) {
