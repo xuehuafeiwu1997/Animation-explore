@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PopAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic, copy) dispatch_block_t completeBlock;
+//@property (nonatomic, copy) dispatch_block_t completeBlock;
 
 @end
 

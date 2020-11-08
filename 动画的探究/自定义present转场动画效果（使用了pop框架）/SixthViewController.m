@@ -31,23 +31,12 @@
     [self.view addSubview:self.presentButton];
 }
 
-
-
 - (void)didClickOnPresent:(UIButton *)button {
     NSLog(@"点击了开启转场动画的按钮");
     CustomModalViewController *modalVC = [[CustomModalViewController alloc] init];
     modalVC.transitioningDelegate = self;
     modalVC.modalPresentationStyle = UIModalPresentationCustom;
     [self.navigationController presentViewController:modalVC animated:YES completion:nil];
-}
-
-#pragma mark - UIViewControllerTransitionDelegate
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    return [[PresentingAnimationController alloc] init];
-}
-
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return [[DismissingAnimationController alloc] init];
 }
 
 - (UIButton *)presentButton {
@@ -61,6 +50,15 @@
     [_presentButton addTarget:self action:@selector(didClickOnPresent:) forControlEvents:UIControlEventTouchUpInside];
     [_presentButton sizeToFit];
     return _presentButton;
+}
+
+#pragma mark - UIViewControllerTransitionDelegate
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return [[PresentingAnimationController alloc] init];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return [[DismissingAnimationController alloc] init];
 }
 
 @end

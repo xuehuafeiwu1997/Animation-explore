@@ -9,7 +9,6 @@
 #import "FifthViewController.h"
 #import "CustomPushViewController.h"
 #import "PushAnimationController.h"
-#import "PushInteractiveViewController.h"
 
 @interface FifthViewController ()<UIGestureRecognizerDelegate>
 

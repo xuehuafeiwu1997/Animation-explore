@@ -14,7 +14,6 @@
 		B6873BA0253864C10010D42B /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873B9F253864C10010D42B /* FifthViewController.m */; };
 		B6873BA3253865EA0010D42B /* CustomPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873BA2253865EA0010D42B /* CustomPushViewController.m */; };
 		B6873BA62539359C0010D42B /* PushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873BA52539359C0010D42B /* PushAnimationController.m */; };
-		B6873BA92539366A0010D42B /* PushInteractiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6873BA82539366A0010D42B /* PushInteractiveViewController.m */; };
 		B690450A2533F8F40056CA2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69045092533F8F40056CA2A /* AppDelegate.m */; };
 		B69045152533F8FC0056CA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69045142533F8FC0056CA2A /* Assets.xcassets */; };
 		B69045182533F8FC0056CA2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69045162533F8FC0056CA2A /* LaunchScreen.storyboard */; };
@@ -46,8 +45,6 @@
 		B6873BA2253865EA0010D42B /* CustomPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPushViewController.m; sourceTree = "<group>"; };
 		B6873BA42539359C0010D42B /* PushAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushAnimationController.h; sourceTree = "<group>"; };
 		B6873BA52539359C0010D42B /* PushAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushAnimationController.m; sourceTree = "<group>"; };
-		B6873BA72539366A0010D42B /* PushInteractiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushInteractiveViewController.h; sourceTree = "<group>"; };
-		B6873BA82539366A0010D42B /* PushInteractiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushInteractiveViewController.m; sourceTree = "<group>"; };
 		B69045052533F8F40056CA2A /* 动画的探究.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "动画的探究.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69045082533F8F40056CA2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B69045092533F8F40056CA2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -187,12 +184,10 @@
 		B69DF6262554F7C700D161BF /* 自定义push转场动画效果 */ = {
 			isa = PBXGroup;
 			children = (
-				B6873BA72539366A0010D42B /* PushInteractiveViewController.h */,
-				B6873BA82539366A0010D42B /* PushInteractiveViewController.m */,
-				B6873BA42539359C0010D42B /* PushAnimationController.h */,
-				B6873BA52539359C0010D42B /* PushAnimationController.m */,
 				B6873B9E253864C10010D42B /* FifthViewController.h */,
 				B6873B9F253864C10010D42B /* FifthViewController.m */,
+				B6873BA42539359C0010D42B /* PushAnimationController.h */,
+				B6873BA52539359C0010D42B /* PushAnimationController.m */,
 				B6873BA1253865EA0010D42B /* CustomPushViewController.h */,
 				B6873BA2253865EA0010D42B /* CustomPushViewController.m */,
 			);
@@ -341,7 +336,6 @@
 				B6873B9A2537EF480010D42B /* PresentingAnimationController.m in Sources */,
 				B6F32E26254FFB5E009DC430 /* FourthViewController.m in Sources */,
 				B6873BA62539359C0010D42B /* PushAnimationController.m in Sources */,
-				B6873BA92539366A0010D42B /* PushInteractiveViewController.m in Sources */,
 				B69DF4F4255149F000D161BF /* CustomPopGestureViewController.m in Sources */,
 				B69DF5822552596500D161BF /* PopAnimation.m in Sources */,
 				B69045232533F95C0056CA2A /* FirstViewController.m in Sources */,

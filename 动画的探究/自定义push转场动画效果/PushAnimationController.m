@@ -16,10 +16,7 @@
 
 //用来处理具体的动画
 - (void)animateTransition:(nonnull id<UIViewControllerContextTransitioning>)transitionContext {
-    UIView *fromView = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view;
-    NSLog(@"当前的fromView为%@",fromView);
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    NSLog(@"最终的toVC为%@",toVC);
     //需要将转场后的界面给加上去才行
     [[transitionContext containerView] addSubview:toVC.view];
     UIView *toView = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
@@ -31,7 +28,6 @@
 }
 
 - (void)beginAnimation:(UIView *)toView {
-//    CGSize size = toView.frame.size;
     CGSize size = [UIScreen mainScreen].bounds.size;
     CABasicAnimation *animation1 = [CABasicAnimation animation];
     animation1.keyPath = @"transform.rotation.z";
@@ -61,6 +57,7 @@
     if (flag) {
         NSLog(@"动画正常结束");
     }
+     //不论动画是正常结束还是被打断，都要执行该block代码块，标志自定义转场动画结束
     if (self.completeBlock) {
         self.completeBlock();
     }
