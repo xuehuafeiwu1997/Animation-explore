@@ -69,7 +69,21 @@
     if (indexPath.row == 2) {
         cell.textLabel.text = @"使用pop框架实现相应的动画";
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"第%ld个cell",(long)indexPath.row];
+    if (indexPath.row == 3) {
+        cell.textLabel.text = @"CABasicAnimation实现绕定点旋转";
+    }
+    if (indexPath.row == 4) {
+        cell.textLabel.text = @"push的自定义转场动画";
+    }
+    if (indexPath.row == 5) {
+        cell.textLabel.text = @"自定义的present转场动画";
+    }
+    if (indexPath.row == 6) {
+        cell.textLabel.text = @"由于锚点的变化导致的旋转异常";
+    }
+    if (indexPath.row == 7) {
+        cell.textLabel.text = @"测滑返回手势";
+    }
     return cell;
 }
 
