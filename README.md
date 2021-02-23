@@ -1,5 +1,5 @@
 # Animation-explore
-总结iOS开发中使用到的动画的方法，并且实现几个复杂的例子
+总结iOS开发中使用到的动画的方法，并且实现几个复杂的例子  
 [iOS开发中动画效果的探究(一)](https://www.jianshu.com/p/59f9f9ff73a5)  
 
 [iOS动画效果的探究二：UIView Animation实现动画
